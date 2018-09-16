@@ -1,0 +1,5 @@
+The elections18_graphics is a repository that "contains code for all graphics related to the 2018 General Election results", according to the ReadMe. Drawing from my limited knowledge of the internet, I have only associated interactive graphics with Javascript and CSS only, plus the data itself (csv?JSON?). However,it seems that the volume of the project is much larger than what I expected, and contains many other file types like python code and things I don't recognize.
+
+Something that also strikes me as interesting is how project secrets are managed. I have used API key that I am supposed to hide, but I have yet to figure out an efficient way to do it when I post my code to the repo. The concept of the environment variable seems important.
+
+I have a lot of questions about it. For example, what is Bootstrap and curl? What's npm? What is a LESS file? What's the file structure behind the final products we see? It requires "You have virtualenv and virtualenvwrapper installed and working"? What type of tool are they? What do they do? How to install? How they're supposed to work? 
