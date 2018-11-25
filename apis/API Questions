@@ -1,0 +1,26 @@
+What URL would you use to get a list of the the most recent votes in the House?
+'https://api.propublica.org/congress/v1/house/votes/recent.json'
+
+How about to get a list of all members of Congress from Missouri?
+"url_MO_house = 'https://api.propublica.org/congress/v1/members/house/MO/current.json" is the url for house members and "url_MO_senate = 'https://api.propublica.org/congress/v1/members/house/MO/current.json"
+
+The New York Times used a version of this API to do this interactive about the sequence of votes leading up to the confirmation of Neil Gorsuch to the Supreme Court. How would you use the API to get the information about these votes? Hint: The votes were on April 6/7, 2017.
+
+'https://api.propublica.org/congress/v1/senate/votes/2017-04-06/2017-04-07.json'
+
+In this response, which details all members leaving office, how would you get the first and last name of the first result in the list? (Hint: Use dictionary and list lookup syntax ...)
+
+For the first House member to leave office:
+
+"https://api.propublica.org/congress/v1/115/house/members/leaving.json" 
+
+print data['results'][0]['members'][0]['first_name'] + " " + data['results'][0]['members'][0]['last_name']
+
+It's Mia Love.
+
+For the first Senate member to leave office
+
+'https://api.propublica.org/congress/v1/115/senate/members/leaving.json'
+print data['results'][0]['members'][0]['first_name'] + " " + data['results'][0]['members'][0]['last_name']
+
+And it's Claire McCaskill.
